@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "portfolio app demonstrating sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "sass",
+    "scss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
