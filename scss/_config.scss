@@ -5,3 +5,12 @@ $light-color: #f4f4f4;
 $dark-color: #333;
 $medium-color: #ccc;
 $bg-image: url('../images/showcase.jpg');
+
+// SET TEXT COLOR MIXIN
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
