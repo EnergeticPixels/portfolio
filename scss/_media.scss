@@ -35,6 +35,7 @@
   #home-b .stats, 
   #home-c .process,
   #about-d .testimonials,
+  #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr;
   }
@@ -53,6 +54,49 @@
     &-b {
       .stats div {
         padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // ABOUT
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas: 
+          'bioimage'
+          'bio'
+          'aw1'
+          'aw2'
+          'aw3';
+      }
+    }
+    &-c {
+      display: none;
+    }
+  }
+
+  // CONTACT
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas: 
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
+      }
+    }
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
+        &:last-child {
+          border: none;
+          margin: 0;
+          padding: 0;
+        }
       }
     }
   }
